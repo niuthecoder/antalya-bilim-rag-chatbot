@@ -42,10 +42,15 @@ The chatbot returns **direct, structured answers** using the CSV knowledge base.
 
 
 git clone https://github.com/yourusername/ABU-RAG-Chatbot.git
+
 cd ABU-RAG-Chatbot/backend
+
 python -m venv venv      # Windows
+
 venv\Scripts\activate    # Mac/Linux
+
 source venv/bin/activate
+
 pip install -r requirements.txt
 
 ## Download models:
