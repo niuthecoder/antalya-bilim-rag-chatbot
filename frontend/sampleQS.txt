@@ -1,0 +1,40 @@
+1. University Overview
+"Can you tell me about Antalya Bilim University?"
+
+"What is the history of Antalya Bilim University?"
+
+"Give me an overview of the university."
+
+"Where is Antalya Bilim University located?"
+
+2. Contact Information
+"What is the address of Antalya Bilim University?"
+
+"How can I contact Antalya Bilim University?"
+
+"What is the contact email for Antalya Bilim University?"
+
+"What is the phone number of Antalya Bilim University?"
+
+3. Board of Trustees
+"Who is the president of Antalya Bilim University?"
+
+"Who are the vice presidents of Antalya Bilim University?"
+
+"Can you list the board members of Antalya Bilim University?"
+
+"Who is the rector of Antalya Bilim University?"
+
+4. Links and Resources
+"What is the website for Antalya Bilim University?"
+
+"Where can I find the academic staff information?"
+
+"Where can I read about student life at Antalya Bilim University?"
+
+5. General Information
+"Tell me about the university's faculties and institutes."
+
+"What programs are offered at Antalya Bilim University?"
+
+"What is the university's contact information?"

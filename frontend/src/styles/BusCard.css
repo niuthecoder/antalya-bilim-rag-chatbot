@@ -1,0 +1,251 @@
+.bus-card {
+    display: flex;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 2px 5px rgba(11, 55, 150, 0.566);
+    text-align: center;
+    transition: all 0.5s ease;
+  }
+
+  .bus-icon-card-header {
+    background-color: #104EB8;
+    border-radius: 10px;
+    height: fit-content;
+    overflow: hidden;
+  }
+
+  .bus-card-icon-container {
+    background-color: #c6ceda;
+    border-radius: 10px;
+    width: 90px;
+  }
+
+  .bus-card-icon {
+    height: 80px;
+    width: auto;
+    border-radius: 10px;
+  }
+
+  .bus-card-title {
+    color: white;
+    padding: 3px 10px;
+    border-radius: 0 0 10px 10px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+
+
+  .bus-info{
+    flex: 1;
+    margin: 0 35px;
+  }
+
+  .bus-track-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    align-items: start;
+    text-align: left;
+  }
+
+  .bus-stop-container {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .bus-route-stop {
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+    font-size: 20px;
+  }
+
+  .bus-route-dots {
+    position: absolute;
+    height: 32px;
+    width: auto;
+    top: 36px;
+    left: -4px;
+    color: #104EB8;
+  }
+
+  .bus-track-icon-container {
+    position: relative;
+    align-self: start;
+    justify-content: center;
+    padding: 12px;
+  }
+
+  .bus-track-icon {
+    position: absolute;
+    height: 18px;
+    left: 2px;
+    top: 19px;
+    width: auto;
+    color: #104EB8;
+  }
+
+  .track-text {
+    color: #91a9e4;
+    font-size: 14px;
+  }
+
+
+
+
+  .bus-travel-container {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    font-size: 18px;
+    gap: 40px;
+  }
+
+  .bus-distance-container {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .bus-duration-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 5px;
+  }
+  
+  .bus-duration-timing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .bus-travel-icon {
+    height: 20px;
+    width: auto;
+    color: #104EB8;
+  }
+
+  
+
+  .bus-recommendation-container {
+    position: absolute;
+    top: 0px;
+    right: 25px;
+  }
+  
+  .bus-recommendation {
+    color: #ffffff;
+    background-color: #f7ae27;
+    padding: 5px 10px;
+    border-radius: 0 0 10px 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .bus-recommendation::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #f7ae27 transparent transparent transparent;
+  }
+
+  
+  .bus-card-button-container {
+    display: flex;
+    align-items: end;
+  }
+
+    .bus-card-button {
+        background: transparent;
+        border: 1px solid #104EB8;
+        color: #1b3cb3;
+        border-radius: 20px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .bus-card-button:hover {
+        background-color: #0d3a8c;
+        color: white;
+        
+    }
+
+
+
+    .bus-card.expanded {
+        background-color: #104EB8;
+        color: white;
+        padding-bottom: 50px;
+        margin: 20px 0;
+        }
+      
+      .bus-card.expanded .bus-card-button {
+        background: white;
+        color: #1b3cb3;
+        border-color: white;
+      }
+
+    .bus-card.expanded .bus-icon-card-header {
+        background-color: #ffffff;
+      }
+    .bus-card.expanded .bus-card-title {
+        color: #1b3cb3;
+      }
+      
+      .bus-details {
+        padding: 15px;
+        margin-top: 15px;
+        border-top: 1px solid rgba(255,255,255,0.3);
+      }
+      
+      .detail-row {
+        margin-bottom: 8px;
+      }
+      
+      .detail-row span {
+        font-weight: bold;
+        margin-right: 10px;
+      }
+      
+        .bus-card.expanded .bus-travel-icon,
+        .bus-card.expanded .bus-route-dots,
+        .bus-card.expanded .bus-track-icon{
+        color: rgb(99, 183, 252);
+        } 
+        
+      /* Ensure other elements change color when expanded */
+      .bus-card.expanded .stop
+      {
+        color: white;
+      }
+
+
+
+
+.expanded-route-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: start;
+    text-align: left;
+}

@@ -1,0 +1,131 @@
+
+/* About Section */
+
+.homepageAbout {
+    display: flex;
+    min-height: 100vh;
+    position: relative;
+}
+.homepageAbout .image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50%;
+}
+.homepageAbout .content {
+    color: black;
+    background: rgb(255, 255, 255);
+    padding: 50px;
+    width: 50%;
+    align-items: top;
+    justify-content: center;
+    
+}
+.homepageAbout h2 {
+    font-size: 70px;
+    font-weight: 700;
+    color: black;
+    text-align: left;
+    max-width: 800px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+.homepageAbout p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-family: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.homepageAbout .button-container{
+    display: inline-block;
+    background-color: transparent;
+    color: rgb(27, 46, 168);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 60px;
+    border: 2px solid rgb(27, 46, 168);
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.homepageAbout .button-container:hover {
+    background-color: rgb(27, 46, 168);
+    color: white;
+}
+
+
+
+/* parallax Section */
+
+.parallax1 {
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    display: flex; 
+    align-items: last baseline;
+    justify-content: flex-start;
+    color: white; 
+    text-align: left;
+    font-size: 100px; 
+    font-family: serif;
+    font-weight: 700;
+    line-height: 1;
+    padding-right: 750px;
+    padding-left: 70px;
+    opacity: 0.7;
+}
+
+
+
+
+ /* FAQ Section */
+
+.homepageABU {
+    background: rgba(255, 255, 255, 1);
+    color: black;
+    width: 100%;
+    min-height: 510px;
+    align-items: center;
+    justify-content: center;
+}
+
+.homepageABU h2 {
+    color: rgb(37, 37, 37);
+    text-align: center;
+    font-size: 70px;
+    padding-top: 50px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.homepageABU p {
+    font-size: 20px;
+    text-align: left;
+    padding: 20px 200px;
+    line-height: 1.8;
+}
+
+
+.homepageABU .button-container {
+    display: inline-block;
+    background-color: transparent;
+    color: rgb(27, 46, 168);
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-bottom: 25px;
+    border-radius: 60px;
+    border: 2px solid rgb(27, 46, 168);
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+.homepageABU .button-container:hover {
+    background-color: rgb(27, 46, 168);
+    color: white;
+}
+
+@media (max-width: 1100px) {
+    .homepageABU p {
+        padding: 20px 100px;
+    }
+}

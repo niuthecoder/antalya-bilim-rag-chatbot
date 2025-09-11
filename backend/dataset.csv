@@ -1,0 +1,56 @@
+entity_type,entity_name,attribute_value
+university,Antalya Bilim University,Founded in 2010 as the first foundation university in Antalya specializing in STEM and social sciences with English-medium instruction.
+university,Antalya Bilim University,Address: Çıplaklı Mah. Akdeniz Bulvarı No:290 A Döşemealtı/Antalya
+university,Antalya Bilim University,Tel: +90 242 245 0000
+university,Antalya Bilim University,Email: info@antalya.edu.tr
+university,Antalya Bilim University,Website: https://www.antalya.edu.tr
+university,Antalya Bilim University,"Faculties: Engineering, Medicine, Social Sciences, Arts"
+university,Antalya Bilim University,"Departments: Computer Engineering, Medicine, Psychology, Graphic Design"
+university,Antalya Bilim University,"Programs: BSc Computer Engineering, MD Medicine, BA Psychology, BFA Graphic Design, MSc Data Science"
+university,Antalya Bilim University,"Academic terms: Fall (Sep-Jan), Spring (Feb-Jun), Summer (Jul-Aug: Optional)"
+university,Antalya Bilim University,"Orientation Week: Sep 1-5, Finals Fall: Dec 15-22, Finals Spring: May 20-27"
+university,Antalya Bilim University,Established: 2010
+university,Antalya Bilim University,Students count: 12500
+university,Antalya Bilim University,"Accreditation: YÖK, ABET, MÜDEK"
+university,Antalya Bilim University,Ranking: Top 50 in Turkey (2024)
+university,Antalya Bilim University,"Languages: English, Turkish"
+university,Antalya Bilim University,Tuition USD: 15000-18000
+university,Antalya Bilim University,Chancellor: Prof. Dr. Ahmet Yilmaz
+university,Antalya Bilim University,"Vice Chancellors: Prof. Dr. Aysee Kaya, Prof. Dr. Mehmet Demir"
+trustee,Fettah TAMİNCE,Fettah TAMİNCE - President of the Board of Trustees
+trustee,Ahmet ÖZEL,Ahmet ÖZEL - Vice President of the Board of Trustees
+trustee,Murat ÖZERCAN,Murat ÖZERCAN - Vice President of the Board of Trustees
+trustee,Prof. Dr. Semih EKERCİN,Prof. Dr. Semih EKERCİN - Rector and Board Member
+trustee,Münir KARALOĞLU,Münir KARALOĞLU - Board Member
+trustee,Tevfik GÜNAL,Tevfik GÜNAL - Board Member
+trustee,Alper KÖLEOĞLU,Alper KÖLEOĞLU - Board Member
+faculty_member,Prof. Dr. Cafer ÇALIŞKAN,Prof. Dr. Cafer ÇALIŞKAN – Dean
+faculty_member,Assoc. Prof. Dr. Sevgi ŞENGÜL AYAN,Assoc. Prof. Dr. Sevgi ŞENGÜL AYAN – Deputy Dean
+faculty_member,Asst. Prof. Dr. Serdar OKUYUCU,Asst. Prof. Dr. Serdar OKUYUCU – Deputy Dean
+faculty_member,Prof. Dr. Hilal KAZAN,Prof. Dr. Hilal KAZAN – Head of Computer Engineering Department
+faculty_member,Prof. Dr. Necati AĞIRALİOĞLU,Prof. Dr. Necati AĞIRALİOĞLU – Head of Civil Engineering Department
+faculty_member,Asst. Prof. Dr. Seda DEMİREL TOPEL,Asst. Prof. Dr. Seda DEMİREL TOPEL – Head of Electrical Engineering Department
+faculty_member,Asst. Prof. Dr. Şenay SADIÇ,Asst. Prof. Dr. Şenay SADIÇ – Head of Industrial Engineering Department
+faculty_stats,total_professors,18
+faculty_stats,total_associate_professors,12
+faculty_stats,total_assistant_professors,25
+faculty_stats,international_ratio,35%
+course,CS101,Introduction to Programming I (Python) – 6 credits – Dr. Hilal Kazan – Mon/Wed 09:00-10:30 – ENG-101 – Textbook: Python Crash Course
+course,CS201,Data Structures – 6 credits – Dr. Jehad Hamamreh – Mon/Wed 13:00-14:30 – ENG-202 – Prerequisite: CS101
+course,CS481,Machine Learning (Elective) – 7 credits – Prof. Emre Arslan – Wed 09:00-12:00 – AI-Lab-1 – Prerequisite: CS320
+advisor,Dr. Hilal Kazan,Department Head
+advisor,Dr. Sevgi ŞENGÜL AYAN,Email: s.sengul@antalya.edu.tr – Office Hours: Mon/Thu 14:00-16:00
+advisor,Prof. Emre Arslan,Email: e.arslan@antalya.edu.tr – Office Hours: Wed/Fri 10:00-12:00
+facility,AI Research Lab,"GPU clusters, robotics kits"
+facility,Cybersecurity Lab,"Network simulators, forensic tools"
+facility,Makerspace,3D printers & laser cutters at ENG Building Floor 3
+event,Tech Summit,"Nov 10, 2024 at Engineering Auditorium"
+event,Biannual hackathons,Biannual hackathons with industry partners
+internship,Minimum 8 weeks,240 hours
+internship,Approved companies,"TechCo, Innovatech, CyberSecure"
+career_service,Resume workshops,"Mock interviews, job fairs – Contact: career@antalya.edu.tr"
+facility,Main Library,"Opening Hours: Monday-Friday 08:30-22:00, Saturday 10:00-18:00, Sunday 12:00-16:00"
+facility,Main Library,Summer Hours: Monday-Friday 09:00-20:00 - Saturday 10:00-16:00 -Sunday Closed
+facility,Main Library,Exam Period Hours: Monday-Sunday 08:00-24:00
+facility,Main Library,Location: Library Building Floor 2 Door A2-12
+facility,Main Library,Contact: library@antalya.edu.tr | +90 242 245 0200

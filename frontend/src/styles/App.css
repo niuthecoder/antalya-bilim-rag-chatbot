@@ -1,0 +1,163 @@
+/* general css code that will be applied for all the app */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: #104EB8;
+}
+
+
+#root {
+    margin: 0 auto;
+    padding: 0; /* Padding kaldırıldı */
+    text-align: center;
+}
+
+.App {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+    ::-webkit-scrollbar-track {
+        background: rgba(0,0,0,0.1);
+        border-radius: 10px;
+    }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgb(118, 164, 255);
+    border-radius: 15px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(157, 184, 254, 0.655);
+  }
+
+
+
+/* Navbar Ayarları */
+.navbar {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 5px 20px; /* Yukarı ve aşağı padding azaltıldı */
+    background-color: rgba(17, 79, 184, 1);
+    color: rgba(255, 255, 255, 1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    height: 60px; /* Sabit yükseklik */
+}
+
+/* Logo ve Menü İkonu */
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo {
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 1);
+}
+
+/* Navbar Linkleri */
+.navbar-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar-links a {
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    color: rgba(255, 221, 87, 1);
+}
+
+/* Mobil Görünüm */
+@media (max-width: 768px) {
+    .navbar {
+        grid-template-columns: 1fr auto;
+        padding: 5px 15px;
+        justify-content: space-between;
+        height: auto; /* Mobilde yükseklik otomatik */
+    }
+
+    .menu-toggle {
+        display: block;
+        margin-left: auto;
+        margin-right: 15%;
+        padding: 5px;
+        color: rgba(255, 255, 255, 1);
+    }
+
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background-color: rgba(17, 79, 184, 0.9);
+        position: absolute;
+        top: 50px;
+        right: 10px;
+        width: 200px;
+        text-align: left;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .nav-link {
+        font-size: 18px;
+        padding: 8px;
+        color: rgba(255, 255, 255, 1);
+    }
+
+    .nav-link:hover {
+        color: rgba(255, 221, 87, 1);
+    }
+}

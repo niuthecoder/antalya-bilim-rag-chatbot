@@ -1,0 +1,229 @@
+/* BusRoutes.css */
+.bus-routes-page {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .bus-title-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
+    text-align: left;
+  }
+
+    .bus-title {
+        margin: 0;
+        font-weight: bold;
+        color: #ffffff;
+    }
+  
+  .search-container {
+    display: flex;
+    margin-bottom: 60px;
+    gap: 15px;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+  }
+
+  .journey-icon {
+    
+    height: 85px;
+    width: auto;
+  }
+  
+  .bus-search-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+ 
+  .bus-search-bar input {
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    padding: 12px 47px;
+    box-sizing: border-box;
+  }
+
+  .dropdown-container {
+    flex: 1;
+    position: relative;
+  }
+
+  .input-wrapper {
+    position: relative;
+  }
+
+  .bus-search-input:focus {
+    outline: none;
+    box-shadow: 0 4px 8px rgba(9, 35, 95, 0.77);
+    }
+
+    .bus-search-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #606060;
+    user-select: none;
+  }
+  
+  .dropdown-arrow {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 15px;
+    transition: transform 0.3s ease;
+    user-select: none;
+    color: #000000;
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin: 15px 0;
+    max-height: 200px;
+    overflow-y: auto;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.164);
+    z-index: 1000;
+  }
+  
+  .dropdown-item {
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .dropdown-item:hover {
+    background: #f5f5f5;
+  }
+  
+  .no-results {
+    color: #999;
+    cursor: default;
+  }
+  
+  /* Close dropdown when clicking outside */
+  .dropdown-container:focus-within .dropdown-menu {
+    display: block;
+  }
+  
+
+  
+.destination-bar {
+  flex: 1;
+  padding: 12px 15px;
+  background-color: #ffffff33;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+
+
+.white-content-section {
+  background: white;
+  border-radius: 80px 80px 0 0; /* Rounded top corners */
+  min-height: 80vh; /* Takes remaining space */
+  padding: 30px 20px;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.1); /* Optional subtle shadow */
+  width: 100%;
+}
+
+  .bus-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1300px;
+    width: 100%;
+    margin: 20px auto 40px auto;
+    padding: 0 20px;
+    text-align: left;
+  }
+
+    .bus-info-title {
+        margin: 0;
+        font-size: 20px;
+        color: #12399e;
+    }
+
+      .student-card-link {
+        display: flex;
+        align-items: center;
+        position: relative;
+        background-color: #104EB8;
+        color: white;
+        border: none;
+        padding: 7px 16px;
+        border-radius: 30px;
+        font-weight: 500;
+        cursor: pointer;
+        text-decoration: none;
+        box-shadow: 0 0 15px rgba(16, 78, 184, 0.5);
+        transition: all 0.3s ease;
+        animation: shake 2s infinite ease-in-out;
+        overflow: hidden;
+      }
+      
+      .student-card-link:hover {
+        box-shadow: 0 0 20px rgba(16, 78, 184, 0.8);
+        transform: translateY(-2px);
+      }
+      
+      .arrows {
+        margin-left: 8px;
+        font-size: 22px;
+        display: inline-block;
+        /* animation: arrowPulse 1.5s infinite; */
+      }
+      
+      @keyframes shake {
+        0%, 100% { transform: translateX(0); }
+        25% { transform: translateX(-3px); }
+        75% { transform: translateX(3px); }
+      }
+      
+      /* @keyframes arrowPulse {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.5; letter-spacing: 2px; }
+      } */
+
+
+  .bus-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 1300px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+  
+  
+
+  
+  @media (max-width: 768px) {
+    .bus-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .bus-grid {
+      grid-template-columns: 1fr;
+    }
+  }

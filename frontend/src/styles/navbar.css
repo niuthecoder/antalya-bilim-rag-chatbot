@@ -1,0 +1,105 @@
+/* Ana Navbar Ayarları */
+.navbar {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(17, 79, 184, 1); /* Mavi Arka Plan */
+    color: rgba(255, 255, 255, 1); /* Beyaz Yazı Rengi */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Hafif Gölge */
+}
+
+/* Logo ve Menü İkonu */
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo {
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 40px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 1); /* Beyaz Renk */
+}
+
+/* Navbar Linkleri */
+.navbar-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar-links a {
+    color: rgba(255, 255, 255, 1); /* Beyaz Yazı Rengi */
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    color: rgba(255, 221, 87, 1); /* Hover Rengi (Açık Sarı) */
+}
+
+
+
+
+
+/* Mobil Görünüm */
+@media (max-width: 768px) {
+    .navbar {
+        grid-template-columns: 1fr auto;
+        padding: 10px;
+        justify-content: space-between;
+    }
+
+    .menu-toggle {
+        display: block;
+        margin-left: auto;
+        margin-right: 15%;
+        padding: 5px;
+        color: rgba(255, 255, 255, 1); /* Beyaz Renk */
+    }
+
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background-color: rgba(17, 79, 184, 0.9); /* Şeffaf Mavi Arka Plan */
+        position: absolute;
+        top: 60px;
+        right: 10px; /* Sağdan içeri çekme */
+        width: 200px;
+        text-align: left;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .nav-link {
+        font-size: 18px;
+        padding: 8px;
+        color: rgba(255, 255, 255, 1); /* Beyaz Yazı Rengi */
+    }
+
+    .nav-link:hover {
+        color: rgba(255, 221, 87, 1); /* Hover Rengi */
+    }
+}

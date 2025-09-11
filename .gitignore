@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.DS_Store
+.env
+venv/
+.env/
+.cache/
+
+# Logs
+*.log
+
+# Model & Dataset Cache
+*.bin
+*.pt
+*.pth
+datasets/
+checkpoints/

@@ -1,0 +1,139 @@
+/* Genel Ayarlar */
+.feedback-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgba(255, 255, 255, 0.0);
+    padding: 20px;
+}
+
+/* Form Kutusu */
+.feedback-form {
+    width: 90%;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px); /* Bulanıklık efekti */
+    -webkit-backdrop-filter: blur(15px); /* Safari desteği */
+}
+
+/* Başlık */
+.feedback-form h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.9); /* Beyaz yazı */
+}
+
+/* Form Elemanları */
+/* input[type="text"], */
+input[type="email"],
+textarea,
+select,
+.form-input,
+.form-input:focus,
+.submit-button {
+    width: calc(100% - 20px); /* Form genişliğine uyumlu */
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+    box-sizing: border-box; /* Taşma sorununu önler */
+    background-color: rgba(255, 255, 255, 0.2); /* Yumuşak beyaz arka plan */
+    color: #fff; /* Beyaz yazı rengi */
+}
+
+/* Placeholder Renk Ayarı */
+/* input[type="text"]::placeholder, */
+input[type="email"]::placeholder,
+textarea::placeholder,
+.form-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Form Elemanı Üzerine Gelince */
+/* input[type="text"]:focus, */
+input[type="email"]:focus,
+textarea:focus,
+select:focus,
+.form-input:focus {
+    border-color: rgba(76, 175, 80, 0.8);
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+}
+
+/* Metin Alanı (Textarea) */
+textarea.form-input {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Gönder Butonu */
+.submit-button {
+    background: linear-gradient(45deg, #4CAF50, #45a049);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 8px;
+}
+
+.submit-button:hover {
+    background: linear-gradient(45deg, #45a049, #4CAF50);
+    transform: scale(1.05);
+}
+
+
+
+
+/* Dropdown Menü */
+select.form-input {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    padding: 12px;
+    margin: 8px 0;
+    border: 2px solid rgba(76, 175, 80, 0.3);
+    border-radius: 12px;
+    outline: none;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    width: calc(100% - 20px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' fill='%23333'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 20px;
+}
+
+/* Aşağı Yönlendirme İçin Ek Ayarlar */
+select.form-input::-ms-expand {
+    display: none; /* Eski tarayıcılar için oku gizle */
+}
+
+select.form-input:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.6);
+}
+
+/* Mobil ve Dokunmatik Uyum */
+@media (max-width: 768px) {
+    select.form-input {
+        font-size: 18px;
+        padding: 14px;
+        margin: 12px 0;
+        background-size: 25px;
+    }
+}

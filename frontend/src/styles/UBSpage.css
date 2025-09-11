@@ -1,0 +1,155 @@
+
+/* UBS Color Theme */
+.ubs-tutorial {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+.tutorial-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    background: linear-gradient(135deg, #53697f 0%, #3498db 100%);
+    padding: 2rem;
+    border-radius: 10px;
+    color: white;
+}
+
+.step-number {
+    background: #e67e22;
+}
+
+
+.subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+/* Step Cards */
+.tutorial-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.step-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.step-text {
+    padding: 2rem;
+}
+
+.step-text h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+
+
+.step-text p {
+    line-height: 1.7;
+    color: #555;
+}
+
+/* Image Layout */
+.step-visuals {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 0 2rem 2rem;
+}
+
+.step-visuals.single-image {
+    grid-template-columns: minmax(300px, 600px);
+    justify-content: center;
+}
+
+.image-container {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.tutorial-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 1px solid #eee;
+}
+
+.image-caption {
+    padding: 0.8rem;
+    margin: 0;
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+/* Quick Tips */
+.quick-tips {
+    background: #f1f8fe;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-top: 3rem;
+    border-left: 4px solid #3498db;
+}
+
+.quick-tips h3 {
+    color: #2c3e50;
+    margin-bottom: 1.2rem;
+    font-size: 1.3rem;
+}
+
+.quick-tips ul {
+    padding-left: 1.5rem;
+    color: #34495e;
+    line-height: 1.8;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 0.8rem;
+}
+
+.quick-tips li {
+    background: white;
+    padding: 0.8rem;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    list-style-type: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .tutorial-header {
+        padding: 1.5rem;
+    }
+
+    .tutorial-header h1 {
+        font-size: 2rem;
+    }
+
+    .step-text {
+        padding: 1.5rem;
+    }
+
+    .step-visuals,
+    .step-visuals.single-image {
+        grid-template-columns: 1fr;
+        padding: 0 1.5rem 1.5rem;
+    }
+
+    .quick-tips ul {
+        grid-template-columns: 1fr;
+    }
+}

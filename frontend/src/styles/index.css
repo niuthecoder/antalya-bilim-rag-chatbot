@@ -1,0 +1,72 @@
+/* general css code that can be for multiple parts of the app */
+
+.page-container {
+  min-height: 100vh;
+}
+
+.ellipse-background {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.ellipse {
+  position: absolute;
+  border-radius: 150px;
+  filter: blur(0px);
+  width: 800px;
+  height: 140px;
+  transform: rotate(-40deg);
+}
+
+/* top left */
+.ellipse1 {
+  top: 180px;
+  left: -250px;
+}
+
+.ellipse2 {
+  top: 390px;
+  left: -250px;
+}
+
+/* top right */
+.ellipse3 {
+  top: -150px;
+  left: 900px;
+}
+
+.ellipse4 {
+  top: 60px;
+  left: 900px;
+}
+
+/* bottom */
+.ellipse5 {
+  top: 700px;
+  left: 470px;
+}
+.ellipse6 {
+  top: 470px;
+  left: 1000px;
+}
+
+.ellipse1, .ellipse3 {
+  background: linear-gradient(
+    100deg,
+    #2368C1 0%,
+    #104EB8 70%
+  );
+}
+
+.ellipse2, .ellipse4, .ellipse5, .ellipse6 {
+  background: linear-gradient(
+    100deg,
+    #104EB8 30%,
+    #2368C1 100%
+  );
+}
