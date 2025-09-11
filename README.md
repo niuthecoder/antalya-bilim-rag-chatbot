@@ -41,26 +41,28 @@ The chatbot returns **direct, structured answers** using the CSV knowledge base.
 ## Installation
 
 
-git clone https://github.com/yourusername/ABU-RAG-Chatbot.git
+- git clone https://github.com/yourusername/ABU-RAG-Chatbot.git
 
-cd ABU-RAG-Chatbot/backend
+- cd ABU-RAG-Chatbot/backend
 
-python -m venv venv      # Windows
+- python -m venv venv      # Windows
 
-venv\Scripts\activate    # Mac/Linux
+- venv\Scripts\activate    # Mac/Linux
 
-source venv/bin/activate
+- source venv/bin/activate
 
-pip install -r requirements.txt
+- pip install -r requirements.txt
 
 ## Download models:
 
-Embeddings: multi-qa-mpnet-base-dot-v1 (~418MB)
-LLM: google/flan-t5-large
+- Embeddings: multi-qa-mpnet-base-dot-v1 (~418MB)
+  
+- LLM: google/flan-t5-large
 
 ## Usage
-python app.py
-API available at: http://127.0.0.1:5000
+- python app.py
+  
+- API available at: http://127.0.0.1:5000
 
 ## Example using PowerShell:
 $q1 = "Who is the head of Computer Engineering department?"
