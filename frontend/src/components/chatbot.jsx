@@ -8,6 +8,7 @@ const Chatbot = () => {
   const messagesEndRef = useRef(null);
   const [hasSentFirstMessage, setHasSentFirstMessage] = useState(false);
   const [lastMessageCount, setLastMessageCount] = useState(0);
+  const API_URL = import.meta.env.VITE_API_URL;
 
   const suggestions = [
     "What/Where is UBS?",
@@ -27,14 +28,13 @@ const Chatbot = () => {
     setInput('');
 
     try {
-        const response = await fetch(
-        "http://127.0.0.1:5000/ask",
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ message: text }),
-        }
-      );
+        const response = await fetch(`${API_URL}/ask`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ message: text }),
+      });
 
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
